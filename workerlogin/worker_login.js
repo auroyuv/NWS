@@ -52,7 +52,7 @@
   
       // Done
       //redirect to profile page
-      window.location.href = "homepage/user_home.html";
+      window.location.href = "../homepage/user_home.html";
     
       
   
