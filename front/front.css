@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../image/front.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 250px;
+  }
+  
+  .btn:hover {
+    background-color: #3dad43;
+  }
+  
+  .gap {
+    margin-top: 50px;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
