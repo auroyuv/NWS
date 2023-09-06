@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="worker_register.css">
+        
+    </head>
+<body>
+
+<div id="content_container_register">
+  <div id="form_container">
+    <div id="form_header_container">
+      <h2 id="form_header">sign up</h2>
+    </div>
+  <div id="form_content_container">
+            <div id="form_content_inner_container">
+  <div class="input-column">
+    <div class="input-container">
+      <input type="text" id="full_name" required>
+      <label class="placeholder">Full name</label>
+    </div>
+    <div class="input-container">
+      <input type="text" id="username" required>
+      <label class="placeholder">User Name</label>
+    </div>
+    <div class="input-container">
+      <input type="email" id="email" required>
+      <label class="placeholder">Email</label>
+    </div>
+    <div class="input-container">
+      <input type="password" id="password" required>
+      <label class="placeholder">New Password</label>
+    </div>
+    <div class="input-container">
+      <input type="phone" id="phone_no" required>
+      <label class="placeholder">Mobile No</label>
+    </div>
+    <div class="input-container">
+      <input type="text" id="city" placeholder="Search...">
+      <label class="placeholder">City name</label>
+    </div>
+    <div class="input-container">
+      <textarea id="address" required></textarea>
+      <label class="placeholder">Address</label>
+    </div>
+  </div>
+  <div class="input-column">
+    <div class="input-container">
+      <input type="date" id="date_of_birth" required>
+      <label class="placeholder">Date of Birth</label>
+    </div>
+    <div class="input-container">
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <label class="placeholder">Gender</label>
+    </div>
+    <div class="input-container">
+      <select id="marital_status">
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+      </select>
+      <label class="placeholder">Marital Status</label>
+    </div>
+    <div class="input-container">
+      <input type="text" id="nationality" required>
+      <label class="placeholder">Nationality</label>
+    </div>
+    <div class="input-container">
+      <input type="text" id="job_title" required>
+      <label class="placeholder">Job Title or Position</label>
+    </div>
+    <div class="input-container">
+      <input type="text" id="available_time" required>
+      <label class="placeholder">Available Time</label>
+    </div>
+    <div class="input-container">
+      <textarea id="about_you" required></textarea>
+      <label class="placeholder">About You</label>
+    </div>
+  </div>
+
+
+  <div id="button_container">
+
+    <button id="register" onclick="register()">Register</button>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <!-- Include SweetAlert CSS file -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
+<!-- Include SweetAlert JS file -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="worker_register.js"></script>
+
+</html>

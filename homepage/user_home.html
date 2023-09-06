@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="user_home.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+</head>
+<body>
+  <video id="video-background" autoplay muted loop>
+    <source src="../video/pikachu.mp4" type="video/mp4">
+    <!-- Add additional video formats here for cross-browser compatibility -->
+  </video>
+
+    <header>
+      <div class="logo">
+        <img src="../image/nwsname.png" alt="Logo">
+      </div>
+      <div class="search-bar">
+        <input id="search-input" type="text" placeholder="Search">
+        <button id="search-button" type="button">Search</button>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#" id="ling">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="profile-icon" ></a>
+              <ul class="dropdown-menu" id="profile-dropdown">
+                <li><a href="#" id="profile_menu">Profile</a></li>
+                <li><a href="#" id="setting">Settings</a></li>
+                <li><a href="home_page.html">Logout</a></li>
+              </ul>              
+            </li>
+
+         </ul>
+
+        </nav>
+        <div class="menu">
+          <ul id="userData">
+            
+              <label for="file-input">
+                <input type="file" id="file-input" accept="image/*" >
+                <img id="profile-picture" src="#" alt="Profile Picture">
+              </label>
+          
+          </ul>
+        </div>
+      </header>
+      <div id="workersContainer"></div>
+    
+</body>
+
+<script src="user_home.js" ></script>
+
+</html>

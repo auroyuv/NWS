@@ -1,0 +1,111 @@
+.menu {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Start off-screen */
+  width: 300px;
+  height: 100vh;
+  background-color: #f0f0f03b;
+  transition: right 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items:normal;
+}
+.menu li {
+  display: flex; /* Display each list item as a flex container */
+  justify-content: center; /* Align the content horizontally within each box */
+  align-items: center; /* Align the content vertically within each box */
+  padding: 20px;
+  margin-bottom: 10px; /* Add spacing between the boxes */
+  background-color: #ffffff65; /* Add background color to the boxes */
+  border-radius: 10px;
+}
+
+
+.menu.open {
+  right: 0; /* Move to the visible position */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+#profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  margin: auto; /* Align the profile picture in the center */
+  display: block; /* Ensure the profile picture takes up the available space */
+  margin-bottom: 20px;
+  
+}
+#file-input {
+  display: none;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow the search bar to expand and take available space */
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  width: 300px; /* Adjust the width as needed */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #f74949;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.worker-box {
+  display: flex;
+  border: 3px solid #000000;
+  padding: 100px;
+  margin-right: 300px;
+  margin-bottom: 10px;
+  background-color: #f2f2f2af; /* Set the desired background color */
+  border-radius: 10px;
+  align-items: center; /* Center the items vertically */
+
+}
+
+.worker-box ul {
+  margin: 0;
+  padding: 0;
+}
+
+.worker-box li {
+  list-style-type: none;
+  margin-bottom: 0px;
+}
+
+
+.worker-image {
+  width: 150px; /* Adjust the width as per your preference */
+  height: 150px; /* Adjust the height as per your preference */
+  margin-right: 10px; /* Add some spacing between the image and the data */
+  margin-left: -50px;
+}
+
+.worker-data-container {
+  flex: 1; /* Allow the worker's data container to grow and occupy remaining space */
+}
+.worker-list {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="user_login.css">
+    </head>
+    <body>
+        <div id="content_container_register">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header">sign up</h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="text" id="username" placeholder="User Name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+                        <input type="phone" id="phone_no" placeholder="Mobile No">
+                        <textarea name="" id="address" cols="51" rows="5"></textarea>
+                        <div id="select_option">
+                            <select id="select_options">
+                                 <option value="Plumber">Plumber</option>
+                                 <option value="Carpenter" selected>Carpenter</option>
+                                 <option value="Electrician">Electrician</option>
+                            </select>
+                        </div>
+                        
+                         
+
+                        <div id="button_container">
+                            <button id="register" onclick="register()">Register</button>  
+                        </div>       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+
+    <!-- Include SweetAlert CSS file -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+
+<!-- Include SweetAlert JS file -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="user_register.js"></script>
+
+</html>

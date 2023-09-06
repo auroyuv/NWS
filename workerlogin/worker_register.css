@@ -1,0 +1,249 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  
+  #content_container {
+    width: 30%;
+    height: 40%;
+  }
+  
+  #content_container_register {
+    width: 50%;
+    height: 70%;
+  }
+  
+  #form_container {
+    width: 100%;
+    height: 130%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00000035;
+    box-shadow: 0 0 50rgba(0, 0, 0, 0.816) #000;
+    border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+    top: -80px;
+  }
+  
+  #form_header_container {
+    width: 100%;
+    height: 5%;
+    background-color: rgba(0, 0, 0, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(
+      25deg,
+      #ffbe0b,
+      #fb5607,
+      #ff006e,
+      #8338ec,
+      #3a86ff
+    );
+  }
+  
+  #form_header {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  #form_content_container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.185);
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #form_content_inner_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 98%; /* Set width to 100% to match the parent container */
+    height: 96%; /* Set height to 100% to match the parent container */
+  }
+  
+  .input-column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .input-column {
+      width: 100%;
+    }
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+  
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(
+      25deg,
+      #ffbe0b,
+      #fb5607,
+      #ff006e,
+      #8338ec,
+      #3a86ff
+    ) 1;
+  }
+  
+  .input-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative; /* Add this line */
+  }
+  
+  .input-container input:not(:placeholder-shown) + label.placeholder,
+  .input-container input:focus + label.placeholder {
+    top: -20px; /* Adjust this value to control the distance from the input field */
+    font-size: 10px;
+  }
+  
+  .input-container label.placeholder
+   {
+    position: absolute;
+    top: -20px; /* Adjust this value to control the distance from the input field */
+    left: 10px;
+    pointer-events: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 10px;
+    transition: 0.3s;
+  }
+  
+  .about-container {
+    width: 100%;
+    height: 150px;
+    
+  }
+  
+  
+  #button_container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px; /* Adjust the value to control the distance from the bottom */
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: space-between; /* Adjusted to create space between buttons */
+    width: 40%; /* Adjusted width to fit the buttons */
+  }
+  
+  #login_button,
+  #register {
+    
+    padding: 10px 20px;
+  }
+  button {
+    width: 40%;
+    height: 40px;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .input-container input,
+  .input-container select,
+  .about-container,
+  .input-container textarea {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #ffbe0b, #fb5607, #ff006e, #8338ec, #3a86ff) 1;
+  }
+  
+  @media (max-width: 768px) {
+    .input-container {
+      width: 100%;
+    }
+  }
+  
+  #imageContainer {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  #imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #imageFileInput {
+    display: none;
+  }
